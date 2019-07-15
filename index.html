@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="datos" id="valores" onclick="clearValue(id)" onmouseover="cambiaTitulo(id)" onmouseout="restaurar(id)" readonly>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <input type="button" value="7" id="boton7" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="8" id="boton8" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="9" id="boton9" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="+" id="mas" onclick="addElement(value)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" id="boton4" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="5" id="boton5" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="6" id="boton6" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="-" id="menos" onclick="addElement(value)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" id="boton1" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="2" id="boton2" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="3" id="boton3" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="/" id="dividir" onclick="addElement(value)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="." id="punto btnPunto" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="0" id="boton0" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="=" id="igual btnIgual" onclick="addElement(value)">
+                </td>
+                <td>
+                    <input type="button" value="*" id="multiplicar" onclick="addElement(value)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
